@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'Kingthings';
+  src: url('../fonts/Kingthings/Kingthings_Trypewriter_2.ttf');
+}
+
+@font-face {
+  font-family: 'Secret-Typewriter';
+  src: url('../fonts/Secret-Typewriter/veteran_typewriter.ttf');
+}
+
+#main-container h1 {
+  text-align: center;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 50px;
+  font-size: 48px;
+  font-family: 'Kingthings';
+  color:white;
+  background-color:#25383C;
+}
+
+a {
+  font-family: 'Secret-Typewriter';
+  text-decoration: none;
+  color: white;
+}
+
+.section {
+  text-align: center;
+  font-family: 'Secret-Typewriter';
+}
+
+#recent {
+  color:#25383C;
+}
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 1%;
+  background-color: #25383C;
+  /*opacity: 0.75;*/
+  color:white;
+  text-align: center;
+}
+.col:first-child { margin-left: 0; }
+
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+  content:"";
+  display:table;
+}
+.group:after {
+  clear:both;
+}
+.group {
+  zoom:1; /* For IE 6/7 */
+}
+
+
+/*  GRID OF FOUR  */
+.span_4_of_4 {
+  width: 100%;
+}
+.span_3_of_4 {
+  width: 74.6%;
+}
+.span_2_of_4 {
+  width: 49.2%;
+}
+.span_1_of_4 {
+  width: 23.8%;
+}
+
+.project-image {
+  padding-top: 10px;
+  width: 16em;
+  height:12em;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+  .col {
+    margin: 1% 0 1% 0%;
+    background-color: #25383C;
+    /*opacity: 0.75;*/
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .span_4_of_4 {
+    width: 100%;
+  }
+  .span_3_of_4 {
+    width: 100%;
+  }
+  .span_2_of_4 {
+    width: 100%;
+  }
+  .span_1_of_4 {
+    width: 100%;
+  }
+}
